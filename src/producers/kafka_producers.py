@@ -40,7 +40,7 @@ try:
         retries=3,
         max_in_flight_requests_per_connection=1
     )
-    print("✅ Kafka producer connected\n")
+    print("Kafka producer connected\n")
 except KafkaError as e:
     print(f"Kafka connection failed: {e}")
     print("Make sure Kafka is running: docker-compose up -d")
@@ -104,8 +104,8 @@ def send_to_kafka(data):
 
 
 # Main loop
-print("🔄 Starting data collection...")
-print(f"💡 Press Ctrl+C to stop\n")
+print("Starting data collection...")
+print(f"Press Ctrl+C to stop\n")
 
 iteration = 0
 total_api_calls = 0

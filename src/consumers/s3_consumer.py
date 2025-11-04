@@ -138,7 +138,7 @@ try:
             if len(buffer) >= BUFFER_SIZE:
                 if write_to_s3(buffer):
                     total_written += len(buffer)
-                    print(f"📊 Total records written: {total_written}\n")
+                    print(f"Total records written: {total_written}\n")
                     buffer = []  # Clear buffer
 
         except json.JSONDecodeError as e:
