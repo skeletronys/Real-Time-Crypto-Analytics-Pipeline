@@ -1,0 +1,11 @@
+# DBT Configuration
+crypto_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: athena                          # Target data warehouse
+      s3_staging_dir:                       # S3 path for query results
+      region_name:                          # AWS region
+      database:                             # Athena data catalog
+      schema:                               # Target schema (database)
+      threads: 4                            # Number of parallel threads

@@ -1,0 +1,22 @@
+# Local .terraform directories
+.terraform/
+.terraform.lock.hcl
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Exclude .tfvars files (може містити credentials)
+*.tfvars
+*.tfvars.json
+
+# Ignore override files
+override.tf
+override.tf.json
+
+.terraform/              ← НЕ видаляй! Потрібна для роботи
+.terraform.lock.hcl      ← Можна коміттити (фіксує версії)
+terraform.tfstate        ← НЕ коміттити! (містить стан інфраструктури)

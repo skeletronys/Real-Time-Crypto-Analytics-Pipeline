@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: int_hourly_prices
+    description: "Hourly cryptocurrency price aggregations"
+    columns:
+      - name: symbol
+        tests:
+          - not_null
+
+      - name: fetched_date
+        tests:
+          - not_null
+
+      - name: avg_price_usd
+        tests:
+          - not_null

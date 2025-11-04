@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: crypto_analytics_raw
+    tables:
+      - name: crypto_prices
+        description: "Raw crypto price data from S3"

@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: fct_crypto_metrics
+    description: "Daily cryptocurrency metrics for analysis"
+    columns:
+      - name: symbol
+        description: "Crypto"
+        tests:
+          - not_null
+
+      - name: fetched_date
+        description: "Data"
+        tests:
+          - not_null
+
+      - name: daily_avg_price
+        description: "Average price per day"
+        tests:
+          - not_null
