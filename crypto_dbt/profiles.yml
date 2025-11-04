@@ -1,0 +1,10 @@
+crypto_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: athena
+      s3_staging_dir: s3://crypto-analytics-athena/dbt-staging/
+      region_name: eu-north-1
+      database: AwsDataCatalog
+      schema: crypto_analytics_raw
+      threads: 4
